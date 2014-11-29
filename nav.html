@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inline</title>
+	<style>
+		*{margin:0;padding:0;border:0;}
+		div{width:1000px;margin:10px auto;}
+		ul{
+			list-style: none;
+			height:150px;
+			
+		}
+		li{
+			width:300px;
+			height:150px; 
+			background-color: #ccc;
+			margin-right: 10px;
+			float:left;
+			text-align: center;	
+			display: table;
+		}
+		#content{
+			display: table-cell;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>
+				<div id="content">
+	                <strong>first line text</strong><br />单行居中，line-height等于元素高度
+                </div>
+            </li>
+			<li>
+				<div id="content">
+	                <strong>first line text</strong><br />未知高度多行居中，可设置padding
+                </div>
+            </li>
+			<li>
+				<div id="content">
+	                <strong>first line text</strong><br />已知高度多行居中，可将文本放入一个块级元素中，设置table-cell，vertical-align：Middle；父元素display：table
+                </div>
+            </li>
+		</ul>
+	</div>
+</body>
+</html>
