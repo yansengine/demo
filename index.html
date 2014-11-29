@@ -4,35 +4,127 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Yans Engine</title>
-	<link href="style.css" type="text/css" rel="stylesheet">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			border:0;
+		}
+		body{
+			font-size:96%;
+			font-family:'Microsoft YaHei',serif;
+			background:url(img/ollie.jpg) no-repeat;
+            background-size:100% 100%;
+		}
+		#wrapper{
+			width:20em;
+			margin:0 auto;
+			
+		}
+		#content{
+		    padding:5em;        
+		}
+		.commonDiv{
+			
+			display:block;
+			  width:8em;
+			  height:8em;
+			margin-bottom:1em;    
+		    border-radius:4em; 
+		      background: #FF8282; 
+		    position:relative; 
+			    line-height: 8em;
+			    text-align: center;
+
+		   -webkit-animation:Move 4s;
+		   -webkit-animation-timing-function:linear; 
+
+		}
+		/* .commonDiv:hover{
+		          	background:#8080C0; 
+		          }     */  
+		.commonA{
+			text-decoration:none;
+			color:white;  
+		}
+	    /*logo区域动画*/
+	    #logo{
+	    	display:block;
+	    	  width:10em;
+	    	  height:10em;
+	    	margin-bottom:1em;    
+	        border-radius:5em;  
+	          position:relative; 
+	          top:2em;left:4em;
+	        background: #8080C0; 
+	        -webkit-animation:logoMove 2s;
+	    }
+	    @-webkit-keyframes logoMove 
+	    {
+	    	0%{top:2em;}
+	    	50%{top:6em;}
+	    	100%{top:2em;}
+	    } 
+	    #logo a{
+			position:absolute;
+	    	top:35%;left:5%; 
+	    	  font-size: 1.5em;
+					    }
+	    /*导航区域动画*/
+	    @-webkit-keyframes Move
+        {
+        	0%{background:#8080C0;top:0;}
+        	25%{background:#8080C0;top:.5em;}
+        	50%{background:#8080C0;top:1em;}
+        	75%{background:#8080C0;top:.75em;}
+        	100%{background: #8080C0;top:0;}
+        }
+        #aviat{
+        	-webkit-animation-delay:1s;        	
+        } 
+        
+	    #life{
+			-webkit-animation-delay:3s;
+	    }	    
+	    #web{
+	    	-webkit-animation-delay:5s;        	
+	    }	    
+	    #about{
+	    	-webkit-animation-delay:7s;        	
+	    }	    
+		/*底部信息*/
+		#footer{
+			width:40em;
+			margin:0 auto;
+			text-align:center;
+		}
+		#footer a{
+			text-decoration: none;
+			color:#666;
+		}
+	</style>
 </head>
 <body>
 
-	<div id="wrapper">
 		<header id="logo">
 			<a href="index.html" class="commonA">Yans Engine</a>
 		</header>
 		<div id="content">			
 				<div id="aviat" class="commonDiv">
-					<a href="aviation.html" class="commonA">AVIATION<br>
-					&nbsp&nbsp&nbsp&nbsp航  空</a>
+					<a href="aviation.html" class="commonA">航  空</a>
 				</div>
 				<div id="life"   class="commonDiv">
-					<a href="life.html" class="commonA">L I F E<br>&nbsp生活</a>
+					<a href="life.html" class="commonA">生 活</a>
 				</div>
 				<div id="web"  class="commonDiv">
-					<a href="webdeve.html" class="commonA">&nbspWEB DEVELOPMENT<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp网页开发</a>
+					<a href="webdeve.html" class="commonA">前端开发</a>
 				</div>
-				<div id="about" class="commonDiv">
-					<a href="about.html" class="commonA">ABOUT<br>关于我</a>
-				</div>
+				
 		</div>
-	</div>
-
+	
 	<footer id="footer">
 		<p>请使用webkit内核浏览器浏览本站内容,
-		转载本站内容请说明出处<a href="www.yansengine.com">YansEngine</a><br>
-		&copy;copyright  <a href="http://www.miitbeian.gov.cn/">津ICP备14005257号</a></p>
+		转载本站内容请说明出处<a href="www.yansengine.com">YansEngine</a></p>
 	</footer>
 	
 </body>
